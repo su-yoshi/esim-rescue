@@ -1,0 +1,30 @@
+{
+    "links": {
+        "nomad": {
+            "impact_url": "https://example.com/impact/nomad",
+            "coupon_code": "LOGICO10"
+        },
+        "ubigi": {
+            "impact_url": "https://example.com/impact/ubigi",
+            "coupon_code": "LOGICO10"
+        },
+        "airalo": {
+            "impact_url": "https://example.com/impact/airalo",
+            "coupon_code": "LOGICO10"
+        },
+        "holafly": {
+            "impact_url": "https://example.com/impact/holafly",
+            "coupon_code": "LOGICO10"
+        },
+        "gigsky": {
+            "impact_url": "https://example.com/impact/gigsky",
+            "coupon_code": "LOGICO10"
+        }
+    },
+    "site": {
+        "last_updated": "2026-01-31",
+        "author": "ロジコ（運営者）",
+        "note_back_url": "https://note.com/your-note-article",
+        "support_email": "support@example.com"
+    }
+}
