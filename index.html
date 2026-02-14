@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eSIMレスキュー｜海外で"繋がらない"を3分で復旧</title>
+  <meta name="description" content="海外到着後にeSIMが圏外・No Serviceになった日本人旅行者向け。3分でできる最短復旧チェックリスト。iPhone/Android対応。">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">🦞 eSIMレスキュー</div>
+      <a href="#recovery" class="btn btn--accent btn--sm">🚨 今すぐ復旧</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== A. ファーストビュー ===== -->
+    <section class="hero" id="top">
+      <div class="container">
+        <span class="hero__badge">🚨 緊急対応ガイド</span>
+        <h1>eSIMレスキュー<br>海外で"繋がらない"を<br class="sp-only">3分で復旧</h1>
+        <p class="hero__sub">まず復旧手順を試す → ダメなら最適eSIM。<br>困った瞬間に開けばOK。</p>
+        <div class="hero__btns">
+          <a href="#recovery" class="btn btn--accent btn--lg">🚨 今すぐ復旧（3分）</a>
+          <a href="#diagnosis" class="btn btn--primary btn--lg">🔍 30秒診断</a>
+          <a href="#prepare-check" class="btn btn--outline btn--lg">✈️ 出発前チェック</a>
+        </div>
+        <small class="hero__disclaimer">※通信品質は国・回線・場所で変わります。最終判断は各社公式を参照してください。<br>※本ページはアフィリエイトリンクを含みます。</small>
+      </div>
+    </section>
+
+    <!-- ===== B. 今すぐ復旧（3分） ===== -->
+    <section class="section" id="recovery">
+      <div class="container">
+        <h2>🚨 今すぐ復旧（3分）</h2>
+        <p class="section__lead">この順番で試してください。<br>ほとんどのトラブルはこれで解決します。</p>
+
+        <div class="recovery-steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>機内モード ON → OFF</h3>
+              <p>ONにして10秒待ち、OFFに戻します。</p>
+              <span class="step-why">通信モジュールが再起動し、電波をつかみ直します。</span>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3>旅行eSIMの「データローミング」をON</h3>
+              <p>設定画面で旅行用eSIMのローミングをONにします。<br>※主回線（日本のSIM）はOFF推奨です。</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3>ネットワークを「手動選択」</h3>
+              <p>設定の「ネットワーク選択」を自動から手動へ切り替え、現地のキャリアをタップして試します。</p>
+              <span class="step-why">自動設定が微弱な電波を掴み続けている場合があるため有効です。</span>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h3>再起動（APN確認）</h3>
+              <p>電源OFF → 10秒待機 → ON。<br>Androidの場合はAPN設定が正しいかも確認してください。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone / Android タブ -->
+        <h3 class="sub-heading">📱 端末別の詳細手順</h3>
+        <div class="tabs" role="tablist">
+          <button class="tab-btn active" role="tab" onclick="switchTab('tab-iphone',this)">iPhone</button>
+          <button class="tab-btn" role="tab" onclick="switchTab('tab-android',this)">Android</button>
+        </div>
+        <div id="tab-iphone" class="tab-panel active">
+          <ul class="detail-steps">
+            <li>設定 → モバイル通信 をタップ</li>
+            <li>「SIM」欄にある海外用eSIMをタップ</li>
+            <li>「この回線をオンにする」を緑(ON)に</li>
+            <li>「データローミング」をON</li>
+            <li>「ネットワーク選択」→「自動」OFF → キャリア選択</li>
+          </ul>
+        </div>
+        <div id="tab-android" class="tab-panel">
+          <ul class="detail-steps">
+            <li>設定 → ネットワークとインターネット → SIM</li>
+            <li>海外用eSIMをタップして有効化</li>
+            <li>「モバイルデータ」をON、「ローミング」もON</li>
+            <li>「アクセスポイント名」→ 指定APNが選択されているか確認</li>
+          </ul>
+        </div>
+
+        <div class="dual-sim-box">
+          <h3>⚠️ 国内SIM（主回線）と併用中の方へ</h3>
+          <p><strong>「モバイルデータ通信」の回線指定が旅行eSIMになっていますか？</strong></p>
+          <div class="dual-sim-fix">
+            <p><strong>iPhone：</strong>設定 → モバイル通信 → モバイルデータ通信 → 旅行eSIMを選ぶ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== C. 30秒診断 ===== -->
+    <section class="section section--alt" id="diagnosis">
+      <div class="container">
+        <h2>🔍 30秒診断</h2>
+        <p class="section__lead">状況に合わせて「今やること」を提案します。</p>
+
+        <!-- 診断UI -->
+        <div class="diag-container">
+          <div class="diag-header">
+            <h3 class="diag-title">🏥 診断チェック</h3>
+            <div class="diag-progress-bar">
+              <div class="diag-progress-fill" id="diag-progress-fill"></div>
+            </div>
+            <div class="diag-progress-text" id="diag-progress-text">必須項目の入力状況: 0/4 完了</div>
+          </div>
+
+          <div id="diag-form" class="diag-body">
+            <!-- STEP 1 -->
+            <div class="diag-step">
+              <h3 class="diag-step-title">STEP 1 状況確認</h3>
+              <div class="diag-q">
+                <p class="diag-label">いまの状況は？<span class="badge-req">必須</span></p>
+                <div class="diag-opts diag-grid-2" id="dq0">
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q0',this,'offline')">
+                    <span class="opt-icon">🔴</span><span class="opt-label">圏外 / No Service</span>
+                  </button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q0',this,'nodata')">
+                    <span class="opt-icon">📵</span><span class="opt-label">電波あり 通信不可</span>
+                  </button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q0',this,'slow')">
+                    <span class="opt-icon">🐢</span><span class="opt-label">遅い / 不安定</span>
+                  </button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q0',this,'prepare')">
+                    <span class="opt-icon">✈️</span><span class="opt-label">出発前に準備</span>
+                  </button>
+                </div>
+              </div>
+              <div class="diag-q">
+                <p class="diag-label">端末の種類<span class="badge-req">必須</span></p>
+                <div class="diag-opts diag-grid-2" id="dq1">
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q1',this,'iphone')">
+                    <span class="opt-icon">📱</span><span class="opt-label">iPhone</span>
+                  </button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q1',this,'android')">
+                    <span class="opt-icon">🤖</span><span class="opt-label">Android</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="diag-step">
+              <h3 class="diag-step-title">STEP 2 環境確認</h3>
+              <div class="diag-q">
+                <p class="diag-label">日本のSIM（主回線）は？<span class="badge-req">必須</span></p>
+                <div class="diag-opts diag-grid-3" id="dq2">
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q2',this,'yes')"><span
+                      class="opt-label">ある</span></button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q2',this,'no')"><span
+                      class="opt-label">ない</span></button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q2',this,'unknown')"><span
+                      class="opt-label">不明</span></button>
+                </div>
+              </div>
+              <div class="diag-q">
+                <p class="diag-label">Wi-Fiはある？<span class="badge-req">必須</span></p>
+                <div class="diag-opts diag-grid-2" id="dq3">
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q3',this,'yes')">
+                    <span class="opt-icon">📶</span><span class="opt-label">ある</span>
+                  </button>
+                  <button type="button" class="diag-opt-btn" onclick="selDiag('q3',this,'no')">
+                    <span class="opt-icon">❌</span><span class="opt-label">ない</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="diag-step">
+              <h3 class="diag-step-title">STEP 3 詳細（任意）</h3>
+              <div class="diag-opts diag-grid-2">
+                <div class="diag-item">
+                  <p class="diag-label">渡航先 <span class="badge-opt" id="country-req">任意</span></p>
+                  <select id="sel-country" class="diag-select" onchange="diag.country=this.value;updateProgress()">
+                    <option value="">未選択</option>
+                    <option value="kr">🇰🇷 韓国</option>
+                    <option value="tw">🇹🇼 台湾</option>
+                    <option value="us">🇺🇸 米国(ハワイ)</option>
+                    <option value="fr">🇫🇷 フランス</option>
+                    <option value="it">🇮🇹 イタリア</option>
+                    <option value="th">🇹🇭 タイ</option>
+                    <option value="other">🌍 その他</option>
+                  </select>
+                </div>
+                <div class="diag-item">
+                  <p class="diag-label">渡航日数 <span class="badge-opt" id="days-req">任意</span></p>
+                  <select id="sel-days" class="diag-select" onchange="diag.days=this.value;updateProgress()">
+                    <option value="">未選択</option>
+                    <option value="3">3日</option>
+                    <option value="5">5日</option>
+                    <option value="7">7日</option>
+                    <option value="10">10日</option>
+                    <option value="14">14日</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div id="diag-error" class="diag-error" role="alert"></div>
+            <div class="diag-submit">
+              <button type="button" class="btn btn--accent btn--lg btn--full" onclick="submitDiag()" id="btn-submit">🔍
+                診断結果を見る</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 結果UI (隠し) -->
+        <div id="diag-result" class="result-section">
+          <div id="result-content"></div>
+          <div class="res-reset">
+            <button type="button" class="btn-reset" onclick="resetDiag()">🔄 条件を変更して再診断</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== E. 3社おすすめ ===== -->
+    <section class="section section--alt" id="best3">
+      <div class="container">
+        <h2>🏆 おすすめeSIM 3社</h2>
+        <p class="section__lead">繋がらない場合、別回線を買うのが最速の解決策。</p>
+        <div class="best3-container">
+          <div class="best3-card" style="border-color:var(--accent);background:var(--accent-lt)">
+            <span class="best3-badge bg-green">🔰 おすすめ・簡単</span>
+            <div class="logo-text" style="font-size:1.5rem;font-weight:900;margin-bottom:10px">Airalo</div>
+            <ul style="text-align:left;font-size:.9rem;margin-bottom:16px">
+              <li>✅ 世界No.1シェア<sup><a href="#note1">[1]</a></sup>・日本語アプリ</li>
+              <li>✅ 操作が一番わかりやすい</li>
+            </ul>
+            <a href="https://airalo.pxf.io/QYPOe3" class="btn btn--accent btn--full" target="_blank"
+              rel="noopener">Airaloで購入する →</a>
+          </div>
+          <div class="best3-card">
+            <span class="best3-badge bg-dark">📶 次点・安定</span>
+            <div class="logo-text" style="font-size:1.5rem;font-weight:900;margin-bottom:10px">Ubigi</div>
+            <ul style="text-align:left;font-size:.9rem;margin-bottom:16px">
+              <li>✅ NTTグループ関連<sup><a href="#note2">[2]</a></sup>・高品質回線</li>
+              <li>✅ プロファイル設定不要なケース多</li>
+            </ul>
+            <a href="https://go.ubigi.com/WOXD0A" class="btn btn--primary btn--full" target="_blank"
+              rel="noopener">Ubigiで購入する →</a>
+          </div>
+          <div class="best3-card">
+            <span class="best3-badge bg-red">💰 コスパ◎</span>
+            <div class="logo-text" style="font-size:1.5rem;font-weight:900;margin-bottom:10px">Nomad</div>
+            <ul style="text-align:left;font-size:.9rem;margin-bottom:16px">
+              <li>✅ 小容量が安い・LotusFlare社運営<sup><a href="#note3">[3]</a></sup></li>
+              <li>✅ トップアップ（追加購入）対応</li>
+            </ul>
+            <a href="https://lotusflareinc.pxf.io/zzgaBr" class="btn btn--primary btn--full" target="_blank"
+              rel="noopener">Nomadで購入する →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== F. 料金 ===== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2>💰 料金の目安</h2>
+        <div class="table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>プラン例</th>
+                <th>Airalo</th>
+                <th>Nomad</th>
+                <th>Ubigi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>🇰🇷 韓国 3日</td>
+                <td>~$5</td>
+                <td>~$4</td>
+                <td>~$4</td>
+              </tr>
+              <tr>
+                <td>🇹🇼 台湾 5日</td>
+                <td>~$8</td>
+                <td>~$5</td>
+                <td>~$7</td>
+              </tr>
+              <tr>
+                <td>🇺🇸 ハワイ 7日</td>
+                <td>~$15</td>
+                <td>~$10</td>
+                <td>~$12</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="section__lead" style="font-size:0.8rem">※価格は変動します。購入画面で最終確認をお願いします。</p>
+      </div>
+    </section>
+
+    <!-- ===== G. FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>❓ よくある質問</h2>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">海外eSIMは安全ですか？</button>
+          <div class="faq-a">大手サービス（Airalo, Ubigi等）は世界中で利用されており、基本的には安全です。</div>
+        </div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">eSIMを削除してしまいました</button>
+          <div class="faq-a">削除すると再認証が必要になる場合があります。Wi-Fi環境下でサポートに連絡するか、新しいeSIMを購入してください。</div>
+        </div>
+
+        <!-- 脚注 (信頼性の根拠) -->
+        <div style="margin-top:40px;font-size:0.75rem;color:var(--text-sub);border-top:1px solid #eee;padding-top:20px">
+          <p id="note1">[1] Airalo: 世界初のeSIMストアとして知られる (出典: <a href="https://www.airalo.com/about"
+              target="_blank">Airalo About</a>)</p>
+          <p id="note2">[2] Ubigi: Transatel社(NTT Communicationsグループ)が運営 (出典: <a
+              href="https://www.ntt.com/about-us/news/news-2019/02/190228.html" target="_blank">NTT Com ニュースリリース</a>)
+          </p>
+          <p id="note3">[3] Nomad: 米国LotusFlare社が提供するeSIMサービス (出典: <a href="https://lotusflare.com/case-studies/nomad/"
+              target="_blank">LotusFlare Cases</a>)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><span style="border:1px solid #ccc;padding:2px 6px;font-size:.7rem">PR</span> 本ページはアフィリエイトプログラムに参加しています。</p>
+      <p>&copy; eSIM Rescue Guide</p>
+    </div>
+  </footer>
+
+  <div class="sticky-bar">
+    <span class="sticky-text">繋がらない？今すぐ →</span>
+    <a href="#recovery" class="btn btn--accent btn--sm">🚨 復旧手順へ</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
