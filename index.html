@@ -87,20 +87,141 @@
           <button class="tab-btn" role="tab" onclick="switchTab('tab-android',this)">Android</button>
         </div>
         <div id="tab-iphone" class="tab-panel active">
+          <!-- Step 1: 基本設定 -->
+          <h4 class="step-sub-title">1. 基本設定（ローミングON）</h4>
+          <div class="mockup-container">
+            <div class="mockup-screen ios">
+              <div class="ios-header">
+                <span>設定</span>
+                <span>モバイル通信</span>
+              </div>
+              <div class="ios-list">
+                <div class="ios-row">
+                  <div class="ios-label">モバイルデータ通信</div>
+                  <div class="ios-value">旅行用eSIM ></div>
+                </div>
+                <div class="ios-row">
+                  <div class="ios-label">通信のオプション</div>
+                  <div class="ios-value">ローミングオン ></div>
+                </div>
+                <div class="ios-group-title">SIM</div>
+                <div class="ios-row">
+                  <div class="ios-label">旅行用eSIM</div>
+                  <div class="ios-value">オン ></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <ul class="detail-steps">
             <li>設定 → モバイル通信 をタップ</li>
-            <li>「SIM」欄にある海外用eSIMをタップ</li>
-            <li>「この回線をオンにする」を緑(ON)に</li>
-            <li>「データローミング」をON</li>
-            <li>「ネットワーク選択」→「自動」OFF → キャリア選択</li>
+            <li>「モバイルデータ通信」を旅行用eSIMに指定</li>
+            <li>「データローミング」を <strong>ON</strong> にする</li>
+          </ul>
+
+          <!-- Step 2: ネットワーク選択 -->
+          <h4 class="step-sub-title">2. 繋がらない場合（ネットワーク選択）</h4>
+          <div class="mockup-container">
+            <div class="mockup-screen ios">
+              <div class="ios-header">
+                <span>戻る</span>
+                <span>ネットワーク選択</span>
+              </div>
+              <div class="ios-list">
+                <div class="ios-row">
+                  <div class="ios-label">自動</div>
+                  <div class="ios-toggle"></div>
+                </div>
+                <!-- くるくる -->
+                <div class="ios-spinner-row">
+                  <div class="ios-spinner"></div>
+                  <span>読み込み中...</span>
+                </div>
+                <div class="ios-group-title">キャリアを選択</div>
+                <div class="ios-row">
+                  <div class="ios-label">Chunghwa Telecom</div>
+                  <div class="ios-check">✔</div>
+                </div>
+                <div class="ios-row">
+                  <div class="ios-label">Taiwan Mobile</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="detail-steps">
+            <li>「ネットワーク選択」をタップ</li>
+            <li>「自動」を <strong>OFF</strong> にする</li>
+            <li>表示されたキャリア（例: Chunghwaなど）を手動で選ぶ</li>
           </ul>
         </div>
+
         <div id="tab-android" class="tab-panel">
+          <!-- Step 1: 基本設定 -->
+          <h4 class="step-sub-title">1. 基本設定（ローミングON）</h4>
+          <div class="mockup-container">
+            <div class="mockup-screen android">
+              <div class="android-header">
+                <span>←</span>
+                <span>SIMの設定</span>
+              </div>
+              <div class="android-list">
+                <div class="android-row">
+                  <div class="android-text">
+                    <div class="android-label">SIMを使用</div>
+                    <div class="android-sub">旅行用eSIM</div>
+                  </div>
+                  <div class="android-toggle checked"></div>
+                </div>
+                <div class="android-row">
+                  <div class="android-text">
+                    <div class="android-label">ローミング</div>
+                    <div class="android-sub">データ通信時にローミングを利用</div>
+                  </div>
+                  <div class="android-toggle checked"></div>
+                </div>
+                <div class="android-row">
+                  <div class="android-text">
+                    <div class="android-label">優先ネットワーク等の種類</div>
+                    <div class="android-sub">4G (推奨)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <ul class="detail-steps">
             <li>設定 → ネットワークとインターネット → SIM</li>
-            <li>海外用eSIMをタップして有効化</li>
-            <li>「モバイルデータ」をON、「ローミング」もON</li>
-            <li>「アクセスポイント名」→ 指定APNが選択されているか確認</li>
+            <li>「SIMを使用」をON、「ローミング」もON</li>
+          </ul>
+
+          <!-- Step 2: APN設定 -->
+          <h4 class="step-sub-title">2. APN（アクセスポイント）確認</h4>
+          <div class="mockup-container">
+            <div class="mockup-screen android">
+              <div class="android-header">
+                <span>←</span>
+                <span>アクセスポイント名</span>
+              </div>
+              <div class="android-list">
+                <div class="android-row">
+                  <div class="android-text">
+                    <div class="android-label">internet</div>
+                    <div class="android-sub">globaldata</div>
+                  </div>
+                  <div class="android-radio checked">●</div>
+                </div>
+                <div class="android-row">
+                  <div class="android-text">
+                    <div class="android-label">その他 (手動追加)</div>
+                    <div class="android-sub">指示がある場合のみ</div>
+                  </div>
+                  <div class="android-radio">○</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="detail-steps">
+            <li>一番下の「アクセスポイント名」をタップ</li>
+            <li>指定されたAPN（例: internetなど）が選ばれているか確認</li>
+            <li>選ばれていない場合、丸印をタップして選択</li>
           </ul>
         </div>
 
